@@ -1,0 +1,208 @@
+/* Estilos generales */
+* {
+    box-sizing: border-box; /* Asegura que el padding y el border no afecten el ancho total */
+}
+
+body {
+    font-family: Arial, sans-serif; /* Tipografía general */
+    background-color: #b2e0b2; /* Color de fondo verde pastel */
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #4c5559e6; /* Azul claro */
+    padding: 50px;
+    text-align: center;
+    color: white;
+}
+
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #070707; /* Café */
+    padding: 10px;
+    text-align: center;
+    z-index: 999; /* Asegura que la navegación esté encima del contenido */
+}
+
+nav a {
+    color: white;
+    margin: 0 15px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+section {
+    display: flex;
+    flex-direction: column; /* Coloca los apartados en columna */
+    align-items: center; /* Centra los apartados */
+    padding: 20px;
+    margin-top: 60px; /* Margen para que el contenido no esté detrás de la barra de navegación */
+}
+
+h2 {
+    color: #87CEEB; /* Azul claro */
+}
+
+footer {
+    background-color: #8B4513; /* Café */
+    color: white;
+    text-align: center;
+    padding: 10px;
+    width: 100%;
+    position: relative; /* Cambiado a relative para evitar que se superponga */
+}
+
+.apartado {
+    background-color: white; /* Fondo blanco para cada apartado */
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra sutil */
+    padding: 20px; /* Espaciado interno */
+    margin: 20px 0; /* Margen entre apartados */
+    width: 80%; /* Ancho del apartado */
+    text-align: center; /* Centrar texto */
+}
+
+h2 {
+    color: #FFC107; /* Color mostaza */
+    margin-bottom: 15px; /* Espacio debajo del título */
+    padding: 10px; /* Espacio interno en el título */
+    border: 2px solid #FFC107; /* Marco mostaza alrededor del título */
+    border-radius: 5px; /* Bordes redondeados del marco */
+    display: inline-block; /* Asegura que el marco rodee solo el contenido */
+}
+
+p {
+    font-size: 1.2rem; /* Tamaño del texto */
+    color: #333; /* Color del texto */
+    text-shadow: 2px 2px 0px #b2e0b2; /* Sombreado del mismo color que el fondo */
+}
+
+.apartado img {
+    width: 50%; /* La imagen ocupará el 50% del ancho del apartado */
+    height: auto; /* Mantiene la proporción */
+    border-radius: 10px; /* Bordes redondeados en la imagen */
+    transition: transform 0.3s ease; /* Transición para la animación */
+}
+
+.apartado img:hover {
+    transform: scale(0.9); /* Reduce el tamaño al pasar el puntero */
+}
+
+/* Estilos para la sección de educación */
+.Educacion {
+    padding: 50px;
+    font-size: 1.5rem;
+    background-color: #f4f4f9;
+    color: #333;
+}
+
+.Educacion h2 {
+    margin-bottom: 4rem;
+    text-align: center;
+    font-size: 3rem;
+    font-family: 'Playfair Display', serif;
+    color: #2d3436;
+}
+
+/* Estilos para los items de la línea de tiempo */
+.timeline-dot {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+    border-left: 5px solid #0984e3;
+    margin-bottom: 40px;
+    background-color: #fff;
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+    border-radius: 10px;
+}
+
+.timeline-dot:hover {
+    transform: scale(1.05);
+}
+
+/* Fecha de la línea de tiempo */
+.timeline-date {
+    font-size: 24px;
+    font-weight: bold;
+    color: #636e72;
+    margin-right: 20px;
+}
+
+/* Estilos de los encabezados */
+.timeline-content1 h3,
+.timeline-content2 h3 {
+    font-size: 1.8rem;
+    font-family: 'Roboto', sans-serif;
+    color: #d63031;
+    margin-bottom: 15px;
+}
+
+/* Estilos para los párrafos */
+.timeline-content1 p,
+.timeline-content2 p {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+    color: #2d3436;
+    margin: 0;
+}
+
+/* Imágenes con estilos más sutiles */
+.imgprepa img, .imguni img {
+    width: 400px;
+    border-radius: 15px;
+    filter: grayscale(50%);
+    transition: filter 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+.imgprepa img:hover, .imguni img:hover {
+    filter: grayscale(0%);
+    transform: scale(1.1);
+}
+
+/* Estilos para la sección de hobbies */
+.Hobbies {
+    font-size: 1.8rem;
+    color: #2d3436;
+    margin-top: 50px;
+}
+
+.Hobbies-img {
+    text-align: center;
+}
+
+.Hobbies-img img {
+    border-radius: 50%;
+    width: 150px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.Hobbies-img img:hover {
+    transform: scale(1.2);
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+.tabla-persona {
+    border-collapse: collapse; /* Colapsar bordes */
+    margin: 20px auto; /* Centrar la tabla */
+    width: 80%; /* Ancho de la tabla */
+}
+
+.tabla-persona th, .tabla-persona td {
+    border: 2px solid black; /* Marco negro */
+    padding: 10px; /* Espaciado interno */
+    text-align: center; /* Centrar texto */
+}
+
+.tabla-persona th {
+    background-color: #f2f2f2; /* Color de fondo para el encabezado */
+}
+

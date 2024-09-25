@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página Principal</title>
+    <!-- Enlace al archivo CSS externo -->
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+
+    <!-- Encabezado -->
+    <header>
+        <h1>Bienvenido a mi página web</h1>
+    </header>
+
+    <!-- Menú de navegación -->
+    <nav>
+        <div class="nav-container">
+            <a href="#inicio">Inicio</a>
+            <a href="Mi-vida.html" target="_blank">Mi Vida</a>
+            <a href="https://www.tecnm.mx/" target="_blank">Dónde Estudio</a>
+            <a href="https://www.facebook.com/edwy.hernandezcabrera/?locale=es_LA" target="_blank">Facebook</a> <!-- Botón Facebook -->
+            <a href="https://www.instagram.com/edwyhernandezcabrera/" target="_blank">Instagram</a> <!-- Botón Instagram -->
+        </div>
+    </nav>
+
+    <!-- Javascript para ocultar/mostrar la barra de navegación -->
+    <script>
+        let lastScrollTop = 0;
+        const nav = document.querySelector('nav');
+
+        window.addEventListener('scroll', function() {
+            let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+
+            if (scrollTop > lastScrollTop) {
+                // El usuario está bajando
+                nav.style.top = '-80px'; // Oculta la barra de navegación
+            } else {
+                // El usuario está subiendo
+                nav.style.top = '0'; // Muestra la barra de navegación
+            }
+
+            lastScrollTop = scrollTop;
+        });
+    </script>
+
+    <!-- Sección de Inicio -->
+    <section id="inicio">
+        <h2>Descripción</h2>
+        <p>¡Hola! Esta es mi página personal donde comparto un poco sobre mí, mis intereses, habilidades y recuerdos.</p>
+    </section>
+
+    <section class="Educacion" id="Educacion">
+        <h2 class="heading">Educación</h2>
+
+        <div class="timeline-items">
+            <div class="timeline-item">
+                <div class="timeline-dot">
+                    <div class="timeline-date">2017</div>
+                    <div class="timeline-content1">
+                        <h3>Escuela Secundaria</h3>
+                        <p>Durante la secundaria, Edwy mostró un gran interés en las ciencias, especialmente en la física y la tecnología. Se unió al club de robótica donde aprendió a programar pequeños robots y empezó a destacar en competencias locales. Aunque la secundaria fue un reto en cuanto a balancear sus estudios y sus hobbies, Edwy siempre encontraba tiempo para aprender algo nuevo fuera de las aulas.</p>
+                    </div>
+                    <div class="imgprepa">
+                        <img src="Imagenes/escuelas.jpg" alt="Secundaria">
+                    </div>
+                </div>
+            </div>
+
+            <div class="timeline-item">
+                <div class="timeline-dot">
+                    <div class="timeline-date">2020</div>
+                    <div class="timeline-content1">
+                        <h3>Preparatoria</h3>
+                        <p>Edwy ingresó a la preparatoria con entusiasmo, eligiendo la carrera técnica de Desarrollo de Software. Inspirado por su pasión por la tecnología, pronto se convirtió en uno de los estudiantes más destacados en las materias de programación y algoritmos. Durante este tiempo, Edwy participó en varios proyectos innovadores, incluyendo el desarrollo de una aplicación móvil que ganó un concurso estudiantil. Su dedicación a la tecnología solo creció más fuerte.</p>
+                    </div>
+                    <div class="imgprepa">
+                        <img src="Imagenes/compas.jpg" alt="Preparatoria">
+                    </div>
+                </div>
+            </div>
+
+            <div class="timeline-item">
+                <div class="timeline-dot">
+                    <div class="timeline-date">2023</div>
+                    <div class="timeline-content2">
+                        <h3>Universidad</h3>
+                        <p>Edwy ingresó a la universidad para estudiar Ingeniería en Sistemas Computacionales. A pesar de los desafíos de la educación en línea durante la pandemia, logró adaptarse y aprovechó el tiempo en casa para mejorar sus habilidades en desarrollo web y ciberseguridad. Actualmente, Edwy está trabajando en un proyecto de investigación sobre inteligencia artificial aplicada a la automatización de procesos industriales, y se prepara para lanzar su primera startup tecnológica.</p>
+                    </div>
+                    <div class="imguni">
+                        <img src="Imagenes/The_Woodlands_College_Park_Front_Image.jpg" alt="Universidad">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Mi Vida -->
+    <section id="mi-vida">
+        <h2>Habilidades</h2>
+        <p>Mis principales habilidades son el desarrollo web, la programación y la resolución de problemas complejos.</p>
+
+        <h2>Recuerdos</h2>
+        <p>Tengo muchos recuerdos de mi infancia, especialmente aquellos relacionados con los viajes que hice con mi familia.</p>
+
+        <h2>Hobbies</h2>
+        <p>Mis hobbies incluyen la lectura, jugar videojuegos y explorar nuevas tecnologías.</p>
+    </section>
+
+    <!-- Pie de página -->
+    <footer>
+        <p>© 2024 Mi Página Web</p>
+    </footer>
+
+</body>
+</html>
